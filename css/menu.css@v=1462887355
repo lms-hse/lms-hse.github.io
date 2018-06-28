@@ -1,0 +1,195 @@
+@charset 'UTF-8';
+
+/* top menu */
+.oe_wrapper{
+ font-family: 'Open Sans', sans-serif;
+ position: fixed;
+ left: 0;
+ top: 0;
+ margin: 0;
+ padding: 0;
+ width: 100%;
+ max-width: 1920px;
+ min-width: 480px;
+ min-height: 3.2em;
+ background: #282828;
+ font-size: 0.9em;
+ z-index: 1000001;
+}
+.oe_wrapper::after{
+ clear: both;
+ content: "";
+ display: block;
+ height: 0;
+}
+ul.oe_menu {
+ list-style:none;
+ z-index: 1000002;
+ cursor: default;
+ padding: 0;
+ margin: 0;
+ float: left;
+}
+ul.oe_menu > li {
+ padding: 0.1em 0.2em 0.1em 0.2em;
+ position:relative;
+}
+/*#oe_menu_main { padding-left: 3em; }*/
+#oe_menu_user.oe_menu > li { float:right; }
+#oe_menu_main.oe_menu > li { float:left; }
+
+ul.oe_menu > li > span,
+ul.oe_menu > li > a{
+ display:block;
+ color: #eee;
+ text-decoration: none;
+ font-weight: bold;
+ font-size: 1em;
+ padding: 0.7em 0.8em 0.8em;
+ margin: 1px;
+ opacity: 0.8;
+ border-radius: 0.3em;
+}
+ul.oe_menu > li > span > a {
+ color:#fff;
+ text-decoration:none;
+ font-weight:bold;
+ font-size:1em;
+}
+
+ul.oe_menu > li > span > a:hover,
+ul.oe_menu > li > span > span:hover,
+#mt_new_msg:hover{
+ color:#fff;
+ cursor: pointer;
+}
+
+.padding-home {
+ font-size: 1.9em !important;
+ padding: 0.2em 0.7em 0.3em !important;
+ border-radius: 0.15em !important;
+}
+ul.oe_menu > li > span:hover,
+ul.oe_menu > li.selected > span,
+ul.oe_menu > li > a:hover,
+ul.oe_menu > li.selected > a{
+ background-color:#aaa;
+ color:#444;
+ opacity: 1.0;
+}
+.oe_wrapper ul.hovered > li > span,
+.oe_wrapper ul.hovered > li > a{
+ background:#444;
+ color: #fff;
+}
+ul.oe_menu div{
+ position:absolute;
+ top: 3em;
+ left: 1px;
+ background-color:#fff;
+ min-height: 8em;
+ box-shadow: 0 0 0.3em black;
+ display:none;
+ min-width: 479px;
+ width: 36em;
+}
+ul.oe_menu div ul li a,
+ul.oe_menu div ul li span.link
+{
+ text-decoration:none;
+ color:#222;
+ padding:0.2em 0.2em 0.2em 0.3em;
+ margin:0.2em;
+ display:block;
+ font-size:1.1em;
+}
+ul.oe_menu div ul li span.link:hover,
+ul.oe_menu div ul li a:hover{
+ background:#000;
+ color:#fff;
+ cursor: pointer;
+}
+ul.oe_menu div ul li span.user_account:hover{
+ background:#755 !important;
+}
+ul.oe_menu div ul li span.search_field:hover{
+ background:#eee !important;
+ cursor: default !important;
+ color: #000;
+}
+.oe_full, .oe_one, .oe_double, .oe_half {
+ list-style:none;
+ float:left;
+ margin: 1em 0 1em 1em;
+ padding: 0 0.5em 0.3em 0;
+}
+.oe_full{ width: 33em;}
+.oe_one { width: 10.5em;}
+.oe_double { width: 21.5em;}
+.oe_half{ width: 16em;}
+
+.oe_heading, .oe_photo{
+ color:#777;
+ font-size:1.25em;
+ margin-bottom: 0.5em;
+ padding-bottom: 0.3em;
+}
+.oe_heading{
+ border-bottom: 1px solid #ddd;
+}
+
+/* пункт с количеством новых сообщений по умолчанию скрыт */
+#mt_new_msg {
+ display: none;
+}
+/* меню изначально скрыто, сделано из-за возможного показа страниц в iframe */
+div.oe_wrapper{
+ display: none;
+}
+/* украшательство :) */
+.mail-in {
+ -webkit-animation: mail-in-move 1s 3; /* Chrome, Safari, Opera */
+ animation: mail-in-move 1s 3;
+}
+@-webkit-keyframes mail-in-move {
+    0%  {transform: rotate(0deg); color: #0f2;}
+    25%  {transform: rotate(-30deg); color: #f00;}
+    50%  {transform: rotate(0deg); color: #0f2;}
+    75% {transform: rotate(45deg); color: #ff0;}
+    100% {transform: rotate(0deg); color: #0f2;}
+}
+@keyframes mail-in-move {
+    0%  {transform: rotate(0deg); color: #0f2;}
+    25%  {transform: rotate(-30deg); color: #f00;}
+    50%  {transform: rotate(0deg); color: #0f2;}
+    75% {transform: rotate(45deg); color: #ff0;}
+    100% {transform: rotate(0deg); color: #0f2;}
+}
+
+/*
+ враппер для интеграции в ефронт и модули на движке отличном от PAGES
+ нужен для согласования размера шрифта
+ также смотри теги @media
+ Использование: <span class="wrapper_for_menu"><MENU.PHP></span>
+*/
+.wrapper_for_menu {
+ font-size: 20px;
+ font-family: 'Open Sans', sans-serif;
+ line-height: 1.2em;
+ color: #414141;
+ font-weight: 300;
+}
+
+@media screen and (min-width: 1600px) {
+    ul.oe_menu div {max-width: 1200px;}
+}
+
+@media screen and (max-width: 992px) { /* 960 + 2*16 (padding-left, padding-right: 16px ) */
+    ul.oe_menu div {max-width: 960px;}
+    .wrapper_for_menu {font-size: 16px;}
+}
+
+@media screen and (max-width: 512px) { /* 480 + 2*16 (padding-left, padding-right: 16px ) */
+    ul.oe_menu div {max-width: 479px;}
+    .wrapper_for_menu {font-size: 13px;}
+}

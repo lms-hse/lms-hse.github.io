@@ -1,0 +1,39 @@
+@charset 'UTF-8';
+@import url('font-awesome.min.css');
+
+@font-face {
+ font-family: 'Open Sans';
+ font-style: normal;
+ font-weight: 300;
+ src: local('Open Sans Light'), url(../fonts/OpenSans-Light.woff) format('woff');
+}
+@font-face {
+ font-family: 'Open Sans';
+ font-style: normal;
+ font-weight: 400;
+ src: local('Open Sans Regular'), url(../fonts/OpenSans-Regular.woff) format('woff');
+}
+@font-face {
+ font-family: 'Open Sans';
+ font-style: normal;
+ font-weight: 600;
+ src: local('Open Sans Semibold'), url(../fonts/OpenSans-Semibold.woff) format('woff');
+}
+@font-face {
+ font-family: 'Open Sans';
+ font-style: normal;
+ font-weight: 700;
+ src: local('Open Sans Bold'), url(../fonts/OpenSans-Bold.woff) format('woff');
+}
+@font-face {
+ font-family: 'Open Sans';
+ font-style: italic;
+ font-weight: 300;
+ src: local('Open Sans Light Italic'), url(../fonts/OpenSans-LightItalic.woff) format('woff');
+}
+@font-face {
+ font-family: 'Open Sans';
+ font-style: italic;
+ font-weight: 600;
+ src: local('Open Sans Semibold Italic'), url(../fonts/OpenSans-SemiboldItalic.woff) format('woff');
+}

@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)https://lms.hse.ru/?gb -->
+<html class=" global desktop"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@-ms-viewport{width: device-width}</style><style type="text/css">html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}body{-webkit-text-size-adjust:none}</style><style type="text/css">*,*:before,*:after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}</style>
+	<title>LMS HSE</title>
+	
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+		<!-- DataTables CSS -->
+	<link rel="stylesheet" type="text/css" href="./LMS HSE_files/jquery.dataTables.min.css">
+	<link rel="stylesheet" type="text/css" href="./LMS HSE_files/dataTables.responsive.css">
+	<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+	<script src="./LMS HSE_files/jquery.min.js.Без названия"></script>
+		<!--DataTables JS-->
+		<script type="text/javascript" src="./LMS HSE_files/jquery.dataTables.min.js.Без названия"></script>
+		<script type="text/javascript" src="./LMS HSE_files/dataTables.responsive.min.js.Без названия"></script>
+		<script type="text/javascript">
+		$(document).ready( function () {
+			$('.tablGb').DataTable( {
+				autoWidth: false,
+				ordering: false,
+				info: false,
+				searching: false,
+				paging: false,
+				responsive: true,
+				columns: [
+					{ className: "all" },
+					null,
+					null,
+					null,
+					null,
+					{ className: "min-mobile-p" },
+					{ className: "min-mobile-l"},
+					null,
+					null,
+					{ className: "min-tablet-p"}
+        ]
+			} );
+			
+			
+		   
+			$('.tabl_0').removeClass("trhidden");
+			$('.tablB:first').addClass("active");
+			$('.tablB').on('click', function(){
+				$('.tablB').removeClass("active");
+				$(this).addClass("active")
+				var tablId = $(this).attr('data-tabl');
+				$('tbody tr').addClass("trhidden");
+				$('.tabl_'+tablId).removeClass("trhidden");
+			
+			});
+			$('.moduleNumber td').on('click', function(e){
+				e.preventDefault();
+				e.stopPropagation();
+			});
+		} );
+		</script>
+	<script src="./LMS HSE_files/jquery.scrolly.min.js.Без названия"></script>
+	<style type="text/css">.\31 2u{width:100%}.\31 1u{width:91.6666666667%}.\31 0u{width:83.3333333333%}.\39 u{width:75%}.\38 u{width:66.6666666667%}.\37 u{width:58.3333333333%}.\36 u{width:50%}.\35 u{width:41.6666666667%}.\34 u{width:33.3333333333%}.\33 u{width:25%}.\32 u{width:16.6666666667%}.\31 u{width:8.3333333333%}.\-11u{margin-left:91.6666666667%}.\-10u{margin-left:83.3333333333%}.\-9u{margin-left:75%}.\-8u{margin-left:66.6666666667%}.\-7u{margin-left:58.3333333333%}.\-6u{margin-left:50%}.\-5u{margin-left:41.6666666667%}.\-4u{margin-left:33.3333333333%}.\-3u{margin-left:25%}.\-2u{margin-left:16.6666666667%}.\-1u{margin-left:8.3333333333%}</style><style type="text/css">.row>*{float:left}.row:after{content:'';display:block;clear:both;height:0}.row:first-child>*{padding-top:0!important}</style><style type="text/css">.row>*{padding-left:25px}.row+.row>*{padding:25px 0 0 25px}.row{margin-left:-25px}.row.flush>*{padding-left:0}.row+.row.flush>*{padding:0}.row.flush{margin-left:0}.row.half>*{padding-left:12.5px}.row+.row.half>*{padding:12.5px 0 0 12.5px}.row.half{margin-left:-12.5px}.row.quarter>*{padding-left:6.25px}.row+.row.quarter>*{padding:6.25px 0 0 6.25px}.row.quarter{margin-left:-6.25px}.row.oneandhalf>*{padding-left:37.5px}.row+.row.oneandhalf>*{padding:37.5px 0 0 37.5px}.row.oneandhalf{margin-left:-37.5px}.row.double>*{padding-left:50px}.row+.row.double>*{padding:50px 0 0 50px}.row.double{margin-left:-50px}</style><link rel="stylesheet" type="text/css" href="./LMS HSE_files/style.css"><link rel="stylesheet" type="text/css" href="./LMS HSE_files/style-desktop.css"><style type="text/css">body{min-width:1200px}.container{margin-left:auto;margin-right:auto;width:1200px}.container.small{width:900px}.container.big{width:100%;max-width:1500px;min-width:1200px}</style><style type="text/css">.not-global,.not-desktop{display:none!important}.only-1000px,.only-wide,.only-mobile{display:none!important}</style><script src="./LMS HSE_files/skel.min.js.Без названия"></script>
+	<script src="./LMS HSE_files/init.js.Без названия"></script>
+	<noscript>
+		<link rel="stylesheet" href="css/skel.css" />
+		<link rel="stylesheet" href="css/style.css?v=1" />
+		<link rel="stylesheet" href="css/style-desktop.css" />
+	</noscript>
+	<link rel="icon" type="image/x-icon" href="https://lms.hse.ru/favicon.ico">
+	<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+	<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
+
+<style type="text/css">
+/*
+table {
+width: 80%;
+margin: auto;
+}
+*/
+
+body{
+	min-width: 100%;
+	overflow-x: hidden;
+}
+.desktop header h1{
+	margin-left: 20px;
+}
+.container {
+	max-width: 100%;
+}
+
+.tablT{
+	padding: 0 30px;
+	max-width: 100%;
+}
+.mobile .tablT{
+	padding: 0 10px;
+	width: 100%;
+}
+.iconL{
+    float: left;
+}
+.desktop #cat{
+	margin-left: 20px;
+}
+.iconText{
+	min-width: 370px;
+	width: 50%;
+}
+.mobile .iconText{
+	width: 95%;
+	min-width: 240px;
+	margin: 0 0 15px;
+}
+.trhidden{
+	display: none;
+}
+.trhidden td:first-child{
+	position: absolute;
+	left: 100px !important;
+}
+.bottomArea{
+	text-align: left;
+	clear: both;
+}
+.tablB{
+	background: none repeat scroll 0 0 #3ba8d3;
+	border: 1px solid #bebec1;
+	border-radius: 5px 5px 0 0;
+	color: white;
+	cursor: pointer;
+	margin: 0 -6px 0 0;
+	padding: 6px 15px 3px;
+	text-shadow: none;
+	white-space: nowrap;
+}
+.mobile .tablB{
+	display: inline-block;
+	width: 100%;
+	line-height: 1.1em;
+}
+.mobile .tablB:first-child{
+	margin-left: 0;
+}
+.tablB:hover{
+	background: #386489
+}
+.bottomArea .active{
+	background: #386489
+		
+}
+tbody td {
+    padding: 0.8em;
+}
+tbody td:first-child{
+    text-align: left;
+}
+td {
+    font-weight: normal;    
+    text-align:center;
+    border: solid 1px;
+    padding: 3px;
+    line-height: 1.2em;
+    text-shadow: none;
+    font-size: 0.9em;
+}
+
+th {
+    text-align:center;
+    font-weight:bold;
+    border: solid 1px;
+    line-height:1em;
+}
+.mobile table.dataTable.dtr-inline.collapsed tbody td:first-child::before,
+.mobile table.dataTable.dtr-inline.collapsed tbody th:first-child::before {
+	top: 4px;
+}
+table.dataTable.dtr-inline.collapsed .moduleNumber td:first-child::before,
+table.dataTable.dtr-inline.collapsed .moduleNumber th:first-child::before {
+	content: none;
+}
+table.dataTable.dtr-inline.collapsed .moduleNumber td:first-child{
+	cursor: default;
+}
+.moduleNumber td{
+	background: #dedede;
+	color: black;
+	border-right: 0px #dedede solid;
+	border-left: 0px #dedede solid;
+	font-weight: bold;
+	padding: 0.8em;
+}
+.moduleNumber td:first-child{
+	border-left: 1px #000 solid;
+}
+.moduleNumber td:last-child{
+	border-right: 1px #000 solid;
+}
+.moduleNumber td:first-child{
+	position: relative;
+}
+.mobile .moduleNumber span{
+	bottom: 0.6em;
+}
+.moduleNumber span{
+	bottom: 0.6em;
+}
+/*для мобильных*/
+.mobile table.dataTable thead th, .mobile table.dataTable thead td {
+    padding: 9px 0.4em;
+}
+.desktop table.dataTable thead th, .desktop table.dataTable thead td {
+    padding: 9px 1em;
+}
+</style>
+
+<style type="text/css">/*
+ * contextMenu.js v 1.4.0
+ * Author: Sudhanshu Yadav
+ * s-yadav.github.com
+ * Copyright (c) 2013 Sudhanshu Yadav.
+ * Dual licensed under the MIT and GPL licenses
+**/
+
+.iw-contextMenu {
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.10);
+    border: 1px solid #c8c7cc;
+    border-radius: 11px;
+    display: none;
+    z-index: 1000000132;
+    max-width: 300px;
+}
+
+.iw-cm-menu {
+    background: #fff;
+    color: #000;
+    margin: 0px;
+    padding: 0px;
+}
+
+.iw-curMenu {
+}
+
+.iw-cm-menu li {
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, Ubuntu, sans-serif;
+    list-style: none;
+    padding: 10px;
+    padding-right: 20px;
+    border-bottom: 1px solid #c8c7cc;
+    cursor: pointer;
+    position: relative;
+    font-size: 14px;
+    margin: 0;
+    line-height: inherit;
+}
+
+.iw-cm-menu li:first-child {
+    border-top-left-radius: 11px;
+    border-top-right-radius: 11px;
+}
+
+.iw-cm-menu li:last-child {
+    border-bottom-left-radius: 11px;
+    border-bottom-right-radius: 11px;
+    border-bottom: none;
+}
+
+.iw-mOverlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background: #FFF;
+    opacity: .5;
+}
+
+.iw-contextMenu li.iw-mDisable {
+    opacity: 0.3;
+    cursor: default;
+}
+
+.iw-mSelected {
+    background-color: #F6F6F6;
+}
+
+.iw-cm-arrow-right {
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid #000;
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    margin-top: -5px;
+}
+
+.iw-mSelected > .iw-cm-arrow-right {
+}
+
+/*context menu css end */</style><style type="text/css">@-webkit-keyframes load4 {
+    0%,
+    100% {
+        box-shadow: 0 -3em 0 0.2em, 2em -2em 0 0em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 0;
+    }
+    12.5% {
+        box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em, 3em 0 0 0, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+    }
+    25% {
+        box-shadow: 0 -3em 0 -0.5em, 2em -2em 0 0, 3em 0 0 0.2em, 2em 2em 0 0, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+    }
+    37.5% {
+        box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 0, 2em 2em 0 0.2em, 0 3em 0 0em, -2em 2em 0 -1em, -3em 0em 0 -1em, -2em -2em 0 -1em;
+    }
+    50% {
+        box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 0em, 0 3em 0 0.2em, -2em 2em 0 0, -3em 0em 0 -1em, -2em -2em 0 -1em;
+    }
+    62.5% {
+        box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 0, -2em 2em 0 0.2em, -3em 0 0 0, -2em -2em 0 -1em;
+    }
+    75% {
+        box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0.2em, -2em -2em 0 0;
+    }
+    87.5% {
+        box-shadow: 0em -3em 0 0, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;
+    }
+}
+
+@keyframes load4 {
+    0%,
+    100% {
+        box-shadow: 0 -3em 0 0.2em, 2em -2em 0 0em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 0;
+    }
+    12.5% {
+        box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em, 3em 0 0 0, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+    }
+    25% {
+        box-shadow: 0 -3em 0 -0.5em, 2em -2em 0 0, 3em 0 0 0.2em, 2em 2em 0 0, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+    }
+    37.5% {
+        box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 0, 2em 2em 0 0.2em, 0 3em 0 0em, -2em 2em 0 -1em, -3em 0em 0 -1em, -2em -2em 0 -1em;
+    }
+    50% {
+        box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 0em, 0 3em 0 0.2em, -2em 2em 0 0, -3em 0em 0 -1em, -2em -2em 0 -1em;
+    }
+    62.5% {
+        box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 0, -2em 2em 0 0.2em, -3em 0 0 0, -2em -2em 0 -1em;
+    }
+    75% {
+        box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0.2em, -2em -2em 0 0;
+    }
+    87.5% {
+        box-shadow: 0em -3em 0 0, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;
+    }
+}</style><style type="text/css">/* This is not a zero-length file! */</style></head>
+<body class="">
+
+<!-- Nav -->
+<nav id="nav">
+	<ul class="container" style="width:100%;">
+	<li><a href="https://lms.hse.ru/" class="icon fa-home">&nbsp;LMS</a></li>
+	</ul>
+</nav>
+
+<div class="wrapper style2">
+	<article id="cat">
+		<div class="row">
+		    <div class="5u">
+		<div>
+		    <header>
+			<h1>Зачётная книжка</h1>
+		    </header>
+		</div>
+	    </div>
+			<div class="iconText 7u">
+				<section class="box">
+				<span class="icon featured fa-clock-o iconL"></span>
+				<div>
+					<span>Зачтённые кредиты: 32 </span><br> 
+					<span>Зачтённые часы(общие): 1368 </span><br> 
+					<span>Зачтённые часы(аудиторные): 464 </span><br> 
+				</div>
+				</section>
+			</div>
+			
+		</div>
+	</article>
+
+		<div class="tablT">
+				<div class="bottomArea">
+					<span class="tablB" data-tabl="0">2018/2019 уч. год</span> <span class="tablB active" data-tabl="1">2017/2018 уч. год</span>				</div>
+				
+				<div id="DataTables_Table_0_wrapper" class="dataTables_wrapper no-footer"><table class="tablGb display responsive dataTable no-footer dtr-inline" style="max-width:100%;width: 100%;" id="DataTables_Table_0" role="grid">
+					<thead>
+					<tr role="row"><th rowspan="2" class="sorting_disabled all" colspan="1">Дисциплина</th><th rowspan="2" class="sorting_disabled" colspan="1">Итоговое испытание</th><th colspan="2" rowspan="1">Часы</th><th rowspan="2" class="sorting_disabled" colspan="1">Кредитов</th><th colspan="2" rowspan="1">Оценка</th><th rowspan="2" class="sorting_disabled" colspan="1">Пересдачи</th><th rowspan="2" class="sorting_disabled" colspan="1">Последняя сдача</th><th rowspan="2" class="sorting_disabled min-tablet-p" colspan="1">Преподаватель</th></tr>
+					<tr role="row"><th class="sorting_disabled" rowspan="1" colspan="1">общ.</th><th class="sorting_disabled" rowspan="1" colspan="1">аудит.</th><th class="sorting_disabled min-mobile-p" rowspan="1" colspan="1">10 балльная</th><th class="sorting_disabled min-mobile-l" rowspan="1" colspan="1">5 балльная</th></tr>
+					</thead>
+					<tbody>
+											<tr class="tabl_0 moduleNumber odd trhidden" role="row"><td class=" all"><span>4 модуль</span></td>
+                          <td></td><td></td><td></td><td></td><td class=" min-mobile-p"></td><td class=" min-mobile-l"></td><td></td><td></td><td class=" min-tablet-p"></td></tr><tr class="tabl_0 even trhidden" role="row">
+				<td class=" all">Введение в поведенческую и экспериментальную экономику</td>
+				<td>Экзамен</td>
+				<td>190</td>
+				<td>60</td>
+				<td>5</td><td class=" min-mobile-p"></td> <td class=" min-mobile-l">--</td> <td>0</td><td></td><td class=" min-tablet-p"></td></tr><tr class="tabl_0 odd trhidden" role="row">
+				<td class=" all">Физическая культура</td>
+				<td>Зачет</td>
+				<td>60</td>
+				<td>60</td>
+				<td>0</td><td class=" min-mobile-p"></td> <td class=" min-mobile-l">--</td> <td>0</td><td></td><td class=" min-tablet-p"></td></tr><tr class="tabl_0 even trhidden" role="row">
+				<td class=" all">Независимый экзамен по английскому языку</td>
+				<td>Экзамен</td>
+				<td>0</td>
+				<td>0</td>
+				<td>4</td><td class=" min-mobile-p"></td> <td class=" min-mobile-l">--</td> <td>0</td><td></td><td class=" min-tablet-p"></td></tr><tr class="tabl_0 odd trhidden" role="row">
+				<td class=" all">Базовый курс китайского языка</td>
+				<td>Экзамен</td>
+				<td>285</td>
+				<td>180</td>
+				<td>8</td><td class=" min-mobile-p"></td> <td class=" min-mobile-l">--</td> <td>0</td><td></td><td class=" min-tablet-p"></td></tr><tr class="tabl_0 even trhidden" role="row">
+				<td class=" all">Россия и страны Востока</td>
+				<td>Экзамен</td>
+				<td>190</td>
+				<td>60</td>
+				<td>5</td><td class=" min-mobile-p"></td> <td class=" min-mobile-l">--</td> <td>0</td><td></td><td class=" min-tablet-p"></td></tr><tr class="tabl_0 odd trhidden" role="row">
+				<td class=" all">Вьетнамский язык</td>
+				<td>Экзамен</td>
+				<td>152</td>
+				<td>105</td>
+				<td>4</td><td class=" min-mobile-p"></td> <td class=" min-mobile-l">--</td> <td>0</td><td></td><td class=" min-tablet-p"></td></tr><tr class="tabl_0 moduleNumber even trhidden" role="row"><td class=" all"><span>3 модуль</span></td>
+                          <td></td><td></td><td></td><td></td><td class=" min-mobile-p"></td><td class=" min-mobile-l"></td><td></td><td></td><td class=" min-tablet-p"></td></tr><tr class="tabl_0 odd trhidden" role="row">
+				<td class=" all">История стран Восточной и Юго-Восточной Азии</td>
+				<td>Экзамен</td>
+				<td>684</td>
+				<td>206</td>
+				<td>18</td><td class=" min-mobile-p"></td> <td class=" min-mobile-l">--</td> <td>0</td><td></td><td class=" min-tablet-p"></td></tr><tr class="tabl_0 moduleNumber even trhidden" role="row"><td class=" all"><span>2 модуль</span></td>
+                          <td></td><td></td><td></td><td></td><td class=" min-mobile-p"></td><td class=" min-mobile-l"></td><td></td><td></td><td class=" min-tablet-p"></td></tr><tr class="tabl_0 odd trhidden" role="row">
+				<td class=" all">Личные финансы и основы финансовой математики</td>
+				<td>Экзамен</td>
+				<td>190</td>
+				<td>60</td>
+				<td>5</td><td class=" min-mobile-p"></td> <td class=" min-mobile-l">--</td> <td>0</td><td></td><td class=" min-tablet-p"></td></tr><tr class="tabl_0 even trhidden" role="row">
+				<td class=" all">Физическая культура</td>
+				<td>Зачет</td>
+				<td>40</td>
+				<td>40</td>
+				<td>0</td><td class=" min-mobile-p"></td> <td class=" min-mobile-l">--</td> <td>0</td><td></td><td class=" min-tablet-p"></td></tr><tr class="tabl_0 odd trhidden" role="row">
+				<td class=" all">Базовый курс китайского языка</td>
+				<td>Экзамен</td>
+				<td>285</td>
+				<td>180</td>
+				<td>7</td><td class=" min-mobile-p"></td> <td class=" min-mobile-l">--</td> <td>0</td><td></td><td class=" min-tablet-p"></td></tr><tr class="tabl_0 even trhidden" role="row">
+				<td class=" all">Вьетнамский язык</td>
+				<td>Экзамен</td>
+				<td>152</td>
+				<td>105</td>
+				<td>4</td><td class=" min-mobile-p"></td> <td class=" min-mobile-l">--</td> <td>0</td><td></td><td class=" min-tablet-p"></td></tr><tr class="tabl_0 moduleNumber odd trhidden" role="row"><td class=" all"><span>1 модуль</span></td>
+                          <td></td><td></td><td></td><td></td><td class=" min-mobile-p"></td><td class=" min-mobile-l"></td><td></td><td></td><td class=" min-tablet-p"></td></tr><tr class="tabl_0 even trhidden" role="row">
+				<td class=" all">Экономика</td>
+				<td>Экзамен</td>
+				<td>152</td>
+				<td>0</td>
+				<td>4</td><td class=" min-mobile-p"></td> <td class=" min-mobile-l">--</td> <td>0</td><td></td><td class=" min-tablet-p"></td></tr><tr class="tabl_1 moduleNumber odd" role="row"><td class=" all"><span>4 модуль</span></td>
+                          <td></td><td></td><td></td><td></td><td class=" min-mobile-p"></td><td class=" min-mobile-l"></td><td></td><td></td><td class=" min-tablet-p"></td></tr><tr class="tabl_1 even" role="row">
+				<td class=" all">Физическая культура</td>
+				<td>Зачет</td>
+				<td>60</td>
+				<td>60</td>
+				<td>0</td><td class=" min-mobile-p"></td> <td class=" min-mobile-l">незачёт</td> <td>0</td><td>26-06-18</td><td class=" min-tablet-p">Овчинникова С.В.</td></tr><tr class="tabl_1 odd" role="row">
+				<td class=" all">Учебная практика</td>
+				<td>Экзамен</td>
+				<td>152</td>
+				<td>0</td>
+				<td>4</td><td class=" min-mobile-p">7</td> <td class=" min-mobile-l">хорошо</td> <td>0</td><td>26-06-18</td><td class=" min-tablet-p"></td></tr><tr class="tabl_1 even" role="row">
+				<td class=" all">Всеобщая история (история западных цивилизаций)</td>
+				<td>Экзамен</td>
+				<td>152</td>
+				<td>46</td>
+				<td>4</td><td class=" min-mobile-p">5</td> <td class=" min-mobile-l">удовлетворительно</td> <td>0</td><td>25-06-18</td><td class=" min-tablet-p">Хряков А.В.</td></tr><tr class="tabl_1 odd" role="row">
+				<td class=" all">Базовый курс китайского языка</td>
+				<td>Экзамен</td>
+				<td>380</td>
+				<td>252</td>
+				<td>10</td><td class=" min-mobile-p">5</td> <td class=" min-mobile-l">удовлетворительно</td> <td>0</td><td>26-06-18</td><td class=" min-tablet-p">Соболева Е.Д.</td></tr><tr class="tabl_1 even" role="row">
+				<td class=" all">История стран Восточной и Юго-Восточной Азии</td>
+				<td>Экзамен</td>
+				<td>190</td>
+				<td>58</td>
+				<td>5</td><td class=" min-mobile-p">7</td> <td class=" min-mobile-l">хорошо</td> <td>0</td><td>21-06-18</td><td class=" min-tablet-p">Фирсова В.С.</td></tr><tr class="tabl_1 odd" role="row">
+				<td class=" all">Философия</td>
+				<td>Экзамен</td>
+				<td>152</td>
+				<td>44</td>
+				<td>4</td><td class=" min-mobile-p">6</td> <td class=" min-mobile-l">хорошо</td> <td>0</td><td>19-06-18</td><td class=" min-tablet-p">Лаврухин А.В.</td></tr><tr class="tabl_1 even" role="row">
+				<td class=" all">Внутренний экзамен по английскому языку (1 курс)</td>
+				<td>Экзамен</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td><td class=" min-mobile-p">8</td> <td class=" min-mobile-l">отлично</td> <td>0</td><td>18-06-18</td><td class=" min-tablet-p"></td></tr><tr class="tabl_1 moduleNumber odd" role="row"><td class=" all"><span>3 модуль</span></td>
+                          <td></td><td></td><td></td><td></td><td class=" min-mobile-p"></td><td class=" min-mobile-l"></td><td></td><td></td><td class=" min-tablet-p"></td></tr><tr class="tabl_1 even" role="row">
+				<td class=" all">История восточных цивилизаций</td>
+				<td>Экзамен</td>
+				<td>266</td>
+				<td>80</td>
+				<td>7</td><td class=" min-mobile-p">4</td> <td class=" min-mobile-l">удовлетворительно</td> <td>0</td><td>29-03-18</td><td class=" min-tablet-p">Ли С.-.</td></tr><tr class="tabl_1 odd" role="row">
+				<td class=" all">Социальная антропология Востока</td>
+				<td>Экзамен</td>
+				<td>456</td>
+				<td>138</td>
+				<td>12</td><td class=" min-mobile-p">7</td> <td class=" min-mobile-l">хорошо</td> <td>0</td><td>26-03-18</td><td class=" min-tablet-p">Григорьева Н.В.</td></tr><tr class="tabl_1 moduleNumber even" role="row"><td class=" all"><span>2 модуль</span></td>
+                          <td></td><td></td><td></td><td></td><td class=" min-mobile-p"></td><td class=" min-mobile-l"></td><td></td><td></td><td class=" min-tablet-p"></td></tr><tr class="tabl_1 odd" role="row">
+				<td class=" all">Базовый курс китайского языка</td>
+				<td>Экзамен</td>
+				<td>190</td>
+				<td>84</td>
+				<td>5</td><td class=" min-mobile-p">6</td> <td class=" min-mobile-l">хорошо</td> <td>0</td><td>15-02-18</td><td class=" min-tablet-p">Соболева Е.Д.</td></tr><tr class="tabl_1 even" role="row">
+				<td class=" all">Физическая культура</td>
+				<td>Зачет</td>
+				<td>40</td>
+				<td>40</td>
+				<td>0</td><td class=" min-mobile-p"></td> <td class=" min-mobile-l">зачёт</td> <td>0</td><td>25-12-17</td><td class=" min-tablet-p">Овчинникова С.В.</td></tr><tr class="tabl_1 odd" role="row">
+				<td class=" all">Английский язык</td>
+				<td>Экзамен</td>
+				<td>152</td>
+				<td>60</td>
+				<td>0</td><td class=" min-mobile-p">6</td> <td class=" min-mobile-l">хорошо</td> <td>0</td><td>21-12-17</td><td class=" min-tablet-p">Кравченко С.В.</td></tr><tr class="tabl_1 moduleNumber even" role="row"><td class=" all"><span>1 модуль</span></td>
+                          <td></td><td></td><td></td><td></td><td class=" min-mobile-p"></td><td class=" min-mobile-l"></td><td></td><td></td><td class=" min-tablet-p"></td></tr><tr class="tabl_1 odd" role="row">
+				<td class=" all">Базовый курс китайского языка</td>
+				<td>Экзамен</td>
+				<td>190</td>
+				<td>84</td>
+				<td>5</td><td class=" min-mobile-p">5</td> <td class=" min-mobile-l">удовлетворительно</td> <td>0</td><td>26-10-17</td><td class=" min-tablet-p">Рудь П.В.</td></tr><tr class="tabl_1 even" role="row">
+				<td class=" all">Введение в востоковедение</td>
+				<td>Экзамен</td>
+				<td>114</td>
+				<td>38</td>
+				<td>3</td><td class=" min-mobile-p">7</td> <td class=" min-mobile-l">хорошо</td> <td>0</td><td>25-10-17</td><td class=" min-tablet-p">Зеленев Е.И.</td></tr><tr class="tabl_1 odd" role="row">
+				<td class=" all">Безопасность жизнедеятельности</td>
+				<td>Экзамен</td>
+				<td>38</td>
+				<td>20</td>
+				<td>1</td><td class=" min-mobile-p">8</td> <td class=" min-mobile-l">отлично</td> <td>0</td><td>23-10-17</td><td class=" min-tablet-p">Алферова Н.В.</td></tr></tbody>
+		
+				</table></div>
+	</div>
+		
+	
+
+</div>
+<div class="wrapper style4">
+	<article>
+			<footer>
+				<ul id="copyright">
+					<li>© HSE. All rights reserved.</li><li>Design: <a href="http://lms.hse.ru/">TEAMLMS</a></li>
+				</ul>
+			</footer>
+	</article>
+</div>
+
+
+
+</body></html>
